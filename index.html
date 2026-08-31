@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Attendance Tracker</h1>
+        <p>Manage student attendance easily</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Add Student -->
+        <div class="card">
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter student name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="studentUSN"
+                    placeholder="Enter USN"
+                    required
+                >
+
+                <button type="submit">Add Student</button>
+
+            </form>
+        </div>
+
+        <!-- Attendance -->
+        <div class="card">
+
+            <h2>Mark Attendance</h2>
+
+            <div class="attendance-form">
+
+                <select id="studentSelect">
+                    <option value="">Select Student</option>
+                </select>
+
+                <select id="attendanceStatus">
+                    <option value="">Select Status</option>
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                </select>
+
+                <button onclick="markAttendance()">
+                    Mark Attendance
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Student List -->
+        <div class="card">
+
+            <h2>Student Attendance</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>USN</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                            <th>Percentage</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

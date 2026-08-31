@@ -6,7 +6,7 @@ Resume Skill Analyzer & Career Readiness System
 
 Resume Skill Analyzer is a web-based application that helps students analyze their skills based on their desired career role. It compares the student's skills with the skills required for a selected career, identifies skill gaps, calculates a career readiness score, and provides recommendations for improvement.
 
-# #Objectives
+## Objectives
 Analyze the skills provided by students.
 Compare student skills with career requirements.
 Identify missing skills.
